@@ -142,13 +142,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Go back to the DC-1 remote window. If it's closed, remote back in using Jane's credentials. If it's still open, make sure it's still Jane's account by checking the account in cmd.
 -Open PowerShell ISE as Admin.
 -We are going to paste a script that generates X amount of users in Active Directory (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).
--Click New Script and paste the code.
+-Click New Script and paste the code. Click the green arrow to Run the code. It will place these new accounts in the previously-made _EMPLOYEES Organizational Unit.
+-Open Active Directory Users and Computers and click the _EMPLOYEES group to see the new profiles.
 </p>
 <br />
 
 <p>
 <a href="https://imgtr.ee/image/IElY5"><img src="https://imgtr.ee/images/2023/07/02/90f864f431ece9f88b0753dbfa56273e.png" alt="90f864f431ece9f88b0753dbfa56273e.png" border="0"></a>
 <a href="https://imgtr.ee/image/INCCK"><img src="https://imgtr.ee/images/2023/07/02/0954b462b5b7e9265a91819ffafea64a.png" alt="0954b462b5b7e9265a91819ffafea64a.png" border="0"></a>
+<a href="https://imgtr.ee/image/IN1KM"><img src="https://imgtr.ee/images/2023/07/02/2b8a86d1d94ee62ab5bec79c6e7f352c.png" alt="2b8a86d1d94ee62ab5bec79c6e7f352c.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
