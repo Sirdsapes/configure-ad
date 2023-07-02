@@ -48,12 +48,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -The image will be Windows 10 instead of Windows Server.
 -Use same username/password as before to keep it simple.
 -Click Next and Next to get to Networking.
+-It will automatically put you in the VNET of the resource group.
+-Click Review + create and Create and the VM will begin deploying.
 </p>
 <br />
 
 <p>
 <a href="https://imgtr.ee/image/IV1ZL"><img src="https://imgtr.ee/images/2023/07/02/bd1996a8e7db3d3d6291a7b734a5d43d.png" alt="bd1996a8e7db3d3d6291a7b734a5d43d.png" border="0"></a>
 <a href="https://imgtr.ee/image/IVgdu"><img src="https://imgtr.ee/images/2023/07/02/d0fe9898f1c54b25c7681d7a24d8448b.png" alt="d0fe9898f1c54b25c7681d7a24d8448b.png" border="0"></a>
+<a href="https://imgtr.ee/image/IVTIL"><img src="https://imgtr.ee/images/2023/07/02/f7eb728f0f4238f4ab712068ad8a8c54.png" alt="f7eb728f0f4238f4ab712068ad8a8c54.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
