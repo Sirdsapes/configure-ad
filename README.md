@@ -90,7 +90,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -You'll see a yellow warning sign in the top bar after ADDS is set up. Click it and Promote this server to a domain controller. 
 -In the new window, click Add a new forest and name it something simple; ex: mydomain.com. Click next until you reach the Prerequistes page and click Install. It should take a bit.
 -Set up a password and click Next.
--When it is installed, it will restart the VM, i.e. log you out.
+-When it is installed, it will restart the VM, i.e. log you out, and you will have to reopen the remote connection as before using the DC-1 Public IP.
+-Since DC-1 is now a Domain Controller, you cannot sign back in using the regular username. You'll need to use mydomain.com\ followed by your username, ex: mydomain.com\labuser. The mydomain.com was set up earlier as your root domain. So make sure it matches.
 -
 </p>
 <br />
@@ -101,6 +102,26 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/IFlYu"><img src="https://imgtr.ee/images/2023/07/02/609086116d0cff5ee1c5469f157df863.png" alt="609086116d0cff5ee1c5469f157df863.png" border="0"></a>
 <a href="https://imgtr.ee/image/IFoVs"><img src="https://imgtr.ee/images/2023/07/02/64182195b164b5e7de1dc42664b77be2.png" alt="64182195b164b5e7de1dc42664b77be2.png" border="0"></a>
 <a href="https://imgtr.ee/image/Ich6G"><img src="https://imgtr.ee/images/2023/07/02/95b479ad36047a88905944b36a6264db.png" alt="95b479ad36047a88905944b36a6264db.png" border="0"></a>
+</p>
+<p>
+-In the DC-1 VM, open Active Directory Users and Computers. In the mydomain.com category, create a new Organization Unit named _EMPLOYEES. Right-click mydomain.com, New, Organizational Unit and name it _EMPLOYEES. Do this again but name the new OU _admins.
+-In the _admins group, create a new user. I named them Jane Doe. Their logon name will be whatever you chose, but since they'll be an admin, use jane_admin. Click next and create a password.
+</p>
+<br />
+
+<p>
+<a href="https://imgtr.ee/image/IclJT"><img src="https://imgtr.ee/images/2023/07/02/54f68e3618b9a3d62450365f7ffbce09.png" alt="54f68e3618b9a3d62450365f7ffbce09.png" border="0"></a>
+<a href="https://imgtr.ee/image/IcNZU"><img src="https://imgtr.ee/images/2023/07/02/110cb618b48c0cd2a339b8436f5c9510.png" alt="110cb618b48c0cd2a339b8436f5c9510.png" border="0"></a>
+<a href="https://imgtr.ee/image/IlIc2"><img src="https://imgtr.ee/images/2023/07/02/73465897c45834f02a59330c0ec3c725.png" alt="73465897c45834f02a59330c0ec3c725.png" border="0"></a>
+<a href="https://imgtr.ee/image/IlCuo"><img src="https://imgtr.ee/images/2023/07/02/9598ba1aa0a43cc85f33db2cb1b7aacd.png" alt="9598ba1aa0a43cc85f33db2cb1b7aacd.png" border="0"></a>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
