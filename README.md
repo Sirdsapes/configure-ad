@@ -121,12 +121,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 -Next, we'll be connecting the Client-1 VM to the domain. First, we'll need to set Client-1's DNS settings to the DC's Private IP Address. 
 -Remote into the Client-1 VM using the Public IP and the username/password you set up earlier.
--When you've successfully connected, open the System settings and Rename the PC (advanced).
+-Go back to the Azure portal and find the Private IP of the DC-1 VM. Listed under Networking or found in the Networking group by opening it from the left box. Copy the Private IP and go to the Client-1 VM.
+-Open Client-1's Networking page and click Network Interface. Click DNS servers, click Custom, paste the DC VM's Private IP, and then Save. Make sure there are no spaces in the IP or it will fail to change.
+-Restart the Client-1 VM and the remote connection should close, which closes the remote window. So, remote back into Client-1 same as before.
+-Once back into the remote connection, open System, and click Rename this PC (advanced). In the new window, click Change, and set the Domain to mydomain.com.
+-You will be prompted to enter in the credentials for someone with permission to join the domain. Use the Domain Admin account made earlier, i.e. mydomain.com\jane_admin, and click OK.
+-The remote connection with close due to needing to restart.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<a href="https://imgtr.ee/image/IEIh7"><img src="https://imgtr.ee/images/2023/07/02/b3b9a0642169e4ed8a1360b9dbe8e572.png" alt="b3b9a0642169e4ed8a1360b9dbe8e572.png" border="0"></a>
+<a href="https://imgtr.ee/image/IEj9F"><img src="https://imgtr.ee/images/2023/07/02/a6285fddb378b8bcd063b31bdf9e1101.png" alt="a6285fddb378b8bcd063b31bdf9e1101.png" border="0"></a>
+<a href="https://imgtr.ee/image/IEKk5"><img src="https://imgtr.ee/images/2023/07/02/c50256effffa71fca466623e8e3e8a55.png" alt="c50256effffa71fca466623e8e3e8a55.png" border="0"></a>
+<a href="https://imgtr.ee/image/IEuNM"><img src="https://imgtr.ee/images/2023/07/02/a7815f70e913727f28f96de727cc6fc8.png" alt="a7815f70e913727f28f96de727cc6fc8.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
