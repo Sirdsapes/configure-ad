@@ -73,20 +73,26 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Next we're going to ensure connectivity between the DC and Client by enabling ICMP so we can ping the Client.
 -Go to the DC-1 VM and copy the Public IP address. We'll use that IP to remote login via Window's Remote Desktop Connection.
 -Open Remote Desktop Connection and paste the IP. Login using the username/password used to create the VM.
+-Open Windows Defender Firewall with Advanced Security.
+-Click Inbound Rules in the left box and enable the Core Networking Echo Requests.
 </p>
 <br />
 
 <p>
 <a href="https://imgtr.ee/image/IFUmW"><img src="https://imgtr.ee/images/2023/07/02/f2a71197416c0980a3a7d0f75393e17b.png" alt="f2a71197416c0980a3a7d0f75393e17b.png" border="0"></a>
 <a href="https://imgtr.ee/image/IFr4A"><img src="https://imgtr.ee/images/2023/07/02/c852408654db9f32d11cfa012a95df95.png" alt="c852408654db9f32d11cfa012a95df95.png" border="0"></a>
+<a href="https://imgtr.ee/image/IFyq5"><img src="https://imgtr.ee/images/2023/07/02/9ad8d258b3089191dead1425efa3c184.png" alt="9ad8d258b3089191dead1425efa3c184.png" border="0"></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+-Next, we'll install Active Directory Domain Services in the DC-1 VM.
+-Open Server Manager, click Add roles and features. Click next and make sure DC-1 is the server -- it should be the only one -- click next and click Active Directory Domain Services and Add Features.
+-Click next and let it install.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<a href="https://imgtr.ee/image/IFR1g"><img src="https://imgtr.ee/images/2023/07/02/8ad8ed036d9ff902ea43116d7463f625.png" alt="8ad8ed036d9ff902ea43116d7463f625.png" border="0"></a>
+<a href="https://imgtr.ee/image/IF95l"><img src="https://imgtr.ee/images/2023/07/02/7747fc5b58d008d06ea416edcab8e155.png" alt="7747fc5b58d008d06ea416edcab8e155.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
