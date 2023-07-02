@@ -59,6 +59,36 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/IVTIL"><img src="https://imgtr.ee/images/2023/07/02/f7eb728f0f4238f4ab712068ad8a8c54.png" alt="f7eb728f0f4238f4ab712068ad8a8c54.png" border="0"></a>
 </p>
 <p>
+-Go back to Virtual Machines and reopen the DC-1 VM. Click Networking in the left bar and click Networking Interface.
+-Click IP configurations in the left box and open ipconfig so we can change the IP from Dynamic to Static and click Save.
+</p>
+<br />
+
+<p>
+<a href="https://imgtr.ee/image/IVczF"><img src="https://imgtr.ee/images/2023/07/02/d21a3140bf34f4c88095b3b20c62c00d.png" alt="d21a3140bf34f4c88095b3b20c62c00d.png" border="0"></a>
+<a href="https://imgtr.ee/image/IVE9H"><img src="https://imgtr.ee/images/2023/07/02/dffb37f8f125810f1e6594b2fbb1f2b4.png" alt="dffb37f8f125810f1e6594b2fbb1f2b4.png" border="0"></a>
+<a href="https://imgtr.ee/image/IVt4U"><img src="https://imgtr.ee/images/2023/07/02/633cf0f03c29f11b8f527e4a27969bb5.png" alt="633cf0f03c29f11b8f527e4a27969bb5.png" border="0"></a>
+</p>
+<p>
+-Next we're going to ensure connectivity between the DC and Client by enabling ICMP so we can ping the Client.
+-Go to the DC-1 VM and copy the Public IP address. We'll use that IP to remote login via Window's Remote Desktop Connection.
+-Open Remote Desktop Connection and paste the IP. Login using the username/password used to create the VM.
+</p>
+<br />
+
+<p>
+<a href="https://imgtr.ee/image/IFUmW"><img src="https://imgtr.ee/images/2023/07/02/f2a71197416c0980a3a7d0f75393e17b.png" alt="f2a71197416c0980a3a7d0f75393e17b.png" border="0"></a>
+<a href="https://imgtr.ee/image/IFr4A"><img src="https://imgtr.ee/images/2023/07/02/c852408654db9f32d11cfa012a95df95.png" alt="c852408654db9f32d11cfa012a95df95.png" border="0"></a>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
