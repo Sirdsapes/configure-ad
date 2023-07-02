@@ -107,6 +107,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -In the DC-1 VM, open Active Directory Users and Computers. In the mydomain.com category, create a new Organization Unit named _EMPLOYEES. Right-click mydomain.com, New, Organizational Unit and name it _EMPLOYEES. Do this again but name the new OU _admins.
 -In the _admins group, create a new user. I named them Jane Doe. Their logon name will be whatever you chose, but since they'll be an admin, use jane_admin. Click next and create a password and uncheck User must change password at next logon and click Next to finish creating the user.
 -To make Jane an actual admin, we have to assign the account the role. Right click Jane Doe and open Properties and the Member Of tab and click Add. Add Jane to the Domain Admins group and click OK. Click Apply and OK.
+-Next, we'll be logging back into the DC VM with the user account we just created, i.e. Jane. So, log out of the VM and remote back in using the same Public IP as before. However, we need to log in using Jane's credentials, i.e. mydomain.com\jane_admin, and the password with that account. It will look the same, you're just now using Jane's account.
 </p>
 <br />
 
@@ -118,7 +119,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/Ilzfu"><img src="https://imgtr.ee/images/2023/07/02/9cddcda76774c8572ec2c7dab24a0098.png" alt="9cddcda76774c8572ec2c7dab24a0098.png" border="0"></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+-Next, we'll be connecting the Client-1 VM to the domain. First, we'll need to set Client-1's DNS settings to the DC's Private IP Address. 
+-Remote into the Client-1 VM using the Public IP and the username/password you set up earlier.
+-When you've successfully connected, open the System settings and Rename the PC (advanced).
 </p>
 <br />
 
