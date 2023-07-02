@@ -20,9 +20,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
+- Creating necessary Virtual Machines in Azure: Domain Controller and Client (user).
+- Creating a new user in Active Directory who will be Admin.
+- Connecting a user's VM to the Domain for Admin purposes.
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
@@ -126,7 +126,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Restart the Client-1 VM and the remote connection should close, which closes the remote window. So, remote back into Client-1 same as before.
 -Once back into the remote connection, open System, and click Rename this PC (advanced). In the new window, click Change, and set the Domain to mydomain.com.
 -You will be prompted to enter in the credentials for someone with permission to join the domain. Use the Domain Admin account made earlier, i.e. mydomain.com\jane_admin, and click OK.
--The remote connection with close due to needing to restart.
+-The remote connection will close due to needing to restart.
 </p>
 <br />
 
@@ -137,7 +137,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/IEuNM"><img src="https://imgtr.ee/images/2023/07/02/a7815f70e913727f28f96de727cc6fc8.png" alt="a7815f70e913727f28f96de727cc6fc8.png" border="0"></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+-Next, we will remote back into the Client-1 VM, however we will use Jane's credentials to sign in, i.e. mydomain.com\jane_admin
+-
 </p>
 <br />
 
