@@ -105,7 +105,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 -In the DC-1 VM, open Active Directory Users and Computers. In the mydomain.com category, create a new Organization Unit named _EMPLOYEES. Right-click mydomain.com, New, Organizational Unit and name it _EMPLOYEES. Do this again but name the new OU _admins.
--In the _admins group, create a new user. I named them Jane Doe. Their logon name will be whatever you chose, but since they'll be an admin, use jane_admin. Click next and create a password.
+-In the _admins group, create a new user. I named them Jane Doe. Their logon name will be whatever you chose, but since they'll be an admin, use jane_admin. Click next and create a password and uncheck User must change password at next logon and click Next to finish creating the user.
+-To make Jane an actual admin, we have to assign the account the role. Right click Jane Doe and open Properties and the Member Of tab and click Add. Add Jane to the Domain Admins group and click OK. Click Apply and OK.
 </p>
 <br />
 
@@ -114,6 +115,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/IcNZU"><img src="https://imgtr.ee/images/2023/07/02/110cb618b48c0cd2a339b8436f5c9510.png" alt="110cb618b48c0cd2a339b8436f5c9510.png" border="0"></a>
 <a href="https://imgtr.ee/image/IlIc2"><img src="https://imgtr.ee/images/2023/07/02/73465897c45834f02a59330c0ec3c725.png" alt="73465897c45834f02a59330c0ec3c725.png" border="0"></a>
 <a href="https://imgtr.ee/image/IlCuo"><img src="https://imgtr.ee/images/2023/07/02/9598ba1aa0a43cc85f33db2cb1b7aacd.png" alt="9598ba1aa0a43cc85f33db2cb1b7aacd.png" border="0"></a>
+<a href="https://imgtr.ee/image/Ilzfu"><img src="https://imgtr.ee/images/2023/07/02/9cddcda76774c8572ec2c7dab24a0098.png" alt="9cddcda76774c8572ec2c7dab24a0098.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
