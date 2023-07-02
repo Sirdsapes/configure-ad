@@ -87,12 +87,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Next, we'll install Active Directory Domain Services in the DC-1 VM.
 -Open Server Manager, click Add roles and features. Click next and make sure DC-1 is the server -- it should be the only one -- click next and click Active Directory Domain Services and Add Features.
 -Click next and let it install.
+-You'll see a yellow warning sign in the top bar after ADDS is set up. Click it and Promote this server to a domain controller. 
+-In the new window, click Add a new forest and name it something simple; ex: mydomain.com. Click next until you reach the Prerequistes page and click Install. It should take a bit.
+-Set up a password and click Next.
+-When it is installed, it will restart the VM, i.e. log you out.
+-
 </p>
 <br />
 
 <p>
 <a href="https://imgtr.ee/image/IFR1g"><img src="https://imgtr.ee/images/2023/07/02/8ad8ed036d9ff902ea43116d7463f625.png" alt="8ad8ed036d9ff902ea43116d7463f625.png" border="0"></a>
 <a href="https://imgtr.ee/image/IF95l"><img src="https://imgtr.ee/images/2023/07/02/7747fc5b58d008d06ea416edcab8e155.png" alt="7747fc5b58d008d06ea416edcab8e155.png" border="0"></a>
+<a href="https://imgtr.ee/image/IFlYu"><img src="https://imgtr.ee/images/2023/07/02/609086116d0cff5ee1c5469f157df863.png" alt="609086116d0cff5ee1c5469f157df863.png" border="0"></a>
+<a href="https://imgtr.ee/image/IFoVs"><img src="https://imgtr.ee/images/2023/07/02/64182195b164b5e7de1dc42664b77be2.png" alt="64182195b164b5e7de1dc42664b77be2.png" border="0"></a>
+<a href="https://imgtr.ee/image/Ich6G"><img src="https://imgtr.ee/images/2023/07/02/95b479ad36047a88905944b36a6264db.png" alt="95b479ad36047a88905944b36a6264db.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
