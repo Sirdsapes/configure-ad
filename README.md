@@ -144,6 +144,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -We are going to paste a script that generates X amount of users in Active Directory (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).
 -Click New Script and paste the code. Click the green arrow to Run the code. It will place these new accounts in the previously-made _EMPLOYEES Organizational Unit.
 -Open Active Directory Users and Computers and click the _EMPLOYEES group to see the new profiles.
+-You can test any of these new accounts by remoting into the Client-1 VM and using mydomain.com\ followed by the username and the admin password, i.e. Jane's password.
 </p>
 <br />
 
@@ -151,6 +152,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <a href="https://imgtr.ee/image/IElY5"><img src="https://imgtr.ee/images/2023/07/02/90f864f431ece9f88b0753dbfa56273e.png" alt="90f864f431ece9f88b0753dbfa56273e.png" border="0"></a>
 <a href="https://imgtr.ee/image/INCCK"><img src="https://imgtr.ee/images/2023/07/02/0954b462b5b7e9265a91819ffafea64a.png" alt="0954b462b5b7e9265a91819ffafea64a.png" border="0"></a>
 <a href="https://imgtr.ee/image/IN1KM"><img src="https://imgtr.ee/images/2023/07/02/2b8a86d1d94ee62ab5bec79c6e7f352c.png" alt="2b8a86d1d94ee62ab5bec79c6e7f352c.png" border="0"></a>
+<a href="https://imgtr.ee/image/INd27"><img src="https://imgtr.ee/images/2023/07/02/84ce98799aa742d7040a752c7a2cc477.png" alt="84ce98799aa742d7040a752c7a2cc477.png" border="0"></a>
+<a href="https://imgtr.ee/image/INGQL"><img src="https://imgtr.ee/images/2023/07/02/80b51135b847b2127c440a672e0f9dca.png" alt="80b51135b847b2127c440a672e0f9dca.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
