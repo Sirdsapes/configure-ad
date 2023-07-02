@@ -124,7 +124,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Go back to the Azure portal and find the Private IP of the DC-1 VM. Listed under Networking or found in the Networking group by opening it from the left box. Copy the Private IP and go to the Client-1 VM.
 -Open Client-1's Networking page and click Network Interface. Click DNS servers, click Custom, paste the DC VM's Private IP, and then Save. Make sure there are no spaces in the IP or it will fail to change.
 -Restart the Client-1 VM and the remote connection should close, which closes the remote window. So, remote back into Client-1 same as before.
--Once back into the remote connection, open System, and click Rename this PC (advanced). In the new window, click Change, and set the Domain to mydomain.com.
+-Once back into the remote connection, open System (right-click the Windows icon on the start bar and click System), and click Rename this PC (advanced). In the new window, click Change, and set the Domain to mydomain.com.
 -You will be prompted to enter in the credentials for someone with permission to join the domain. Use the Domain Admin account made earlier, i.e. mydomain.com\jane_admin, and click OK.
 -The remote connection will close due to needing to restart.
 </p>
@@ -138,12 +138,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 -Next, we will remote back into the Client-1 VM, however we will use Jane's credentials to sign in, i.e. mydomain.com\jane_admin
--
+-Once in, open the System window, click Remote Desktop, and Select users that can remotely access this PC. Add Domain Users and click OK.
+-Go back to the DC-1 remote window. If it's closed, remote back in using Jane's credentials. If it's still open, make sure it's still Jane's account by checking the account in cmd.
+-Open PowerShell ISE as Admin.
+-We are going to paste a script that generates X amount of users in Active Directory (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).
+-Click New Script and paste the code.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<a href="https://imgtr.ee/image/IElY5"><img src="https://imgtr.ee/images/2023/07/02/90f864f431ece9f88b0753dbfa56273e.png" alt="90f864f431ece9f88b0753dbfa56273e.png" border="0"></a>
+<a href="https://imgtr.ee/image/INCCK"><img src="https://imgtr.ee/images/2023/07/02/0954b462b5b7e9265a91819ffafea64a.png" alt="0954b462b5b7e9265a91819ffafea64a.png" border="0"></a>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
